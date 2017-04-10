@@ -1,5 +1,7 @@
+# Ideoita
+
 Tässä filessä Ilkka kirjaa ylös ideoita, joita mahdollisesti voisi toteuttaa ohjelmaa kehittäessä.
 
-Ideat:
+## Ideat:
 
-- idea nn jne..
+idea nn jne..
