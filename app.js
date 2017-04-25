@@ -39,7 +39,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         
 });
 
-routerApp.controller('mainController', function($scope) {   
+routerApp.controller('mainController', function($scope) {
+  
+  $scope.formData = {};
 });
 
 
