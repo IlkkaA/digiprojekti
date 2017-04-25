@@ -1,0 +1,35 @@
+
+<div class="q-div">
+  <!-- kysymys -->
+  <h1 class="q-title">1. Miten paljon sinua kiinnostaisi osallistumaan monialaiselle kurssille?</h1>
+
+
+  <!-- vastaus alue -->
+  <div class="rb-div">
+    <ul>
+      <li>
+        <input id="r-1" type="radio" name="r-button" value="yksi" class="">
+        <label for="r-1" ng-click="answerOne = 4">Erittäin paljon</label><div class="check"></div>
+      </li>
+      <li>
+        <input id="r-2" type="radio" name="r-button" value="kaksi" class="">
+        <label for="r-2" ng-click="answerOne = 3">Kohtalaisesti</label><div class="check"></div>
+      </li>
+      <li>
+        <input id="r-3" type="radio" name="r-button" value="kolme" class="">
+        <label for="r-3" ng-click="answerOne = 2">En juurikaan</label><div class="check"></div>
+      </li>
+      <li>
+        <input  id="r-4" type="radio" name="r-button" value="nelja" class="">
+        <label for="r-4" ng-click="answerOne = 1">En ollenkaan</label><div class="check"></div>
+      </li>          
+    </ul>      
+  </div>
+</div>
+
+<!-- buttonit -->
+
+<div class="btn-div text-center clearfix">
+  <a class="fl-left" ui-sref="start"><span>Edellinen</span></a>
+  <a class="fl-right" ui-sref="questionnaire.question-2"><span>Seuraava</span></a>      
+</div>

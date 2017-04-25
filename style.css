@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script'); /*questionnaire tekstiin*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300, 400');
+
+html,
+body {
+  background-color: #e3747a;
+  background-image: linear-gradient(#d3215d, #e3747a);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+
+#all-content {
+  width: 1080px;
+  min-height: 1920px;
+  
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
+
+
+/*
+HEADER & FOOTER
+**************************/
+
+header table {
+  width: 100%;
+  height: 250px;
+  /*border: 1px solid green;*/
+}
+
+header table td {
+  border-collapse: collapse;
+  /*border: 1px solid green;*/
+}
+
+.left-td {
+  width: 100px;
+}
+
+.lamp {
+  color: #fff;
+  height: 150px;
+  padding: 50px 40px;
+  /*border: 1px solid green;*/
+}
+
+header table td h1 {
+  font-size: 90px;
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+}
+
+#pr-bar {
+  height:50px;
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid #fff;
+}
+
+/*
+PAGE CONTENT
+**************************/
+
+#page-content {
+  width: 92%;
+  height: 1500px;
+  margin: 0 auto;
+  padding-top: 40px;
+  /*border: 1px solid white;*/
+}
+
+#main-title {
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25% 0 15% 0;
+}
+
+.q-title {
+  font-size: 70px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.q-val-div ul li {
+  list-style: none;
+}
+
+.q-div {
+  height: 1100px;
+  /*border: 1px solid green;*/
+}
+
+/*
+RADIO BUTTONS
+**************************/
+
+.rb-div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.rb-div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+	overflow: auto;
+}
+
+.rb-div ul li {
+  color: #fff;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+	/*border-bottom: 1px solid #333;*/
+}
+
+.rb-div ul li input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.rb-div ul li label {
+  display: block;
+  position: relative;
+  line-height: 50px;
+  font-size: 50px;
+  padding: 25px 25px 25px 120px;
+  margin: 10px auto 10px;
+  height: 50px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.rb-div ul li:hover label {
+	color: #FFFFFF;
+}
+
+.rb-div ul li .check {
+  display: block;
+  position: absolute;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  top: 30px;
+  left: 20px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+.rb-div ul li:hover .check {
+  border: 5px solid #FFFFFF;
+}
+
+.rb-div ul li .check::before {
+  display: block;
+  position: absolute;
+	content: '';
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+	left: 10px;
+  margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+.rb-div input[type=radio]:checked ~ .check {
+  border: 5px solid #fff;
+}
+
+.rb-div input[type=radio]:checked ~ .check::before {
+  background: #0DFF92;
+}
+
+
+.rb-div input[type=radio]:checked ~ label {
+  color: #0DFF92;
+}
+
+
+/*
+BUTTON STYLES
+**************************/
+
+.btn-div {
+  width: 100%;
+  margin: 0 auto;
+  /*border: 1px solid green;*/
+}
+
+.btn-div a {
+  display: inline-block;
+  width: 430px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #cc0066;
+  padding: 40px;
+  text-decoration: none;
+  border: 5px solid #fff;
+  transition: border 0.25s linear;
+}
+
+.btn-div a span {
+  font-size: 60px;
+}
+
+.btn-div a:hover {
+  cursor: pointer;
+  border: 5px solid #0DFF92;
+}
+
+
+/*
+GENERAL STYLES
+**************************/
+
+.inl-bl {
+    display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.to-center {
+    margin: 0 auto;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+.clearfix {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+
+/*
+MEDIA QUERIES
+**************************/
+/*
+@media (min-width: 1080px) {
+    #all-content {
+
+    }
+}
+*/

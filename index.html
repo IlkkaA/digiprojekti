@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Questionnaire</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js"></script>
+</head>
+
+<body ng-app="routerApp">
+
+  <div id="all-content">
+    <header>
+      <table>
+        <tr>
+          <td class="left-td">
+            <img class="lamp" src="img/wh-lamp.svg" alt="idea lamp" />
+          </td>
+
+          <td align="left">
+            <h1>
+              Questionnaire
+            </h1>
+          </td>
+        </tr>   
+      </table>
+    </header>
+    
+    <div id="page-content">
+<!--
+      <div class="btn-div">
+        <a ui-sref="questionnaire">Home</a>
+      </div>
+-->
+
+      <div ui-view></div>
+    </div>
+         
+  </div>
+  
+<!-- NAVIGATION -->
+  
+<!--
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="questionnaire">Home</a></li>
+        <li><a ui-sref="start">About</a></li>
+    </ul>
+</nav>
+-->
+  
+  
+
+
+
+</body>
+</html>
