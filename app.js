@@ -34,6 +34,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         url: '/question-3',
         templateUrl: 'question-3.html',
   })
+  
+  .state('end', {
+        url: '/end',
+        templateUrl: 'end.html',
+  })
 
     ;
         

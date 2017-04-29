@@ -85,7 +85,14 @@ PAGE CONTENT
   font-size: 90px;
   font-weight: 200;
   text-align: center;
-  padding: 50px 0 0;
+  padding-top: 50px;
+}
+
+.q-title-sm {
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .q-val-div ul li {
@@ -95,6 +102,15 @@ PAGE CONTENT
 .q-div {
   height: 1100px;
   /*border: 1px solid green;*/
+}
+
+.q-div-2 {
+  height: 1220px;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 200;
 }
 
 /*
@@ -205,6 +221,33 @@ TEXTAREA STYLES
   color: #fff;
   font-size: 60px;
   font-family: 'Lato', sans-serif;
+}
+
+
+/*
+CHECKBOX STYLES
+**************************/
+
+.cb-div {
+}
+
+.cb-div ul li {
+  list-style: none;
+  padding: 13px 0;
+  position: relative;
+  /*border: 1px solid white;*/
+}
+
+input[type="checkbox"] {
+  height: 90px;
+  width: 90px;
+}
+
+.cb-div ul li label {
+  font-size: 60px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
 }
 
 
