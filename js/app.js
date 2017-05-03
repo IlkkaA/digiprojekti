@@ -44,9 +44,6 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         
 });
 
-routerApp.controller('mainController', function($scope) {
-  
-  $scope.formData = {};
-});
+
 
 
