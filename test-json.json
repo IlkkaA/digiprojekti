@@ -1,0 +1,20 @@
+{
+  “id”: 1, “teksti”: “HHkysely”, “tyyppi”: “koulukysely”, “tila”: “avoin”, “kysymykset”:
+  [
+    {”id”: 3, ”teksti”: ”Anna vapaata palautetta:”, ”tyyppiid”: 3, ”vaihtoehdot”: null},
+
+    {”id” :1, ”teksti”: ”Mikä on hyvä?”, ”tyyppiid”: 2, ”vaihtoehdot”: 
+      [
+        {”id”:1, ”teksti”: ”Kyllä”},
+        {”id”:2, ”teksti”: ”Ei”}
+      ]
+    },
+    {”id”: 2, ”teksti”: ”Milloin koulussa on kivaa?”, ”tyyppiid”: 1, ”vaihtoehdot”: 
+      [
+        {”id”:3, ”teksti”: ”Kun on mielekästä tekemistä”},
+        {”id”:4, ”teksti”: ”Kun ei ole stressiä”},
+        {”id”: 5, ”teksti”: ”Kun ruokalassa on hyvää ruokaa”}
+      ]
+    }
+  ]
+}
