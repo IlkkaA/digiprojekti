@@ -4,10 +4,12 @@ routerApp.controller('mainController', function($scope) {
   myObj = {
     "id": 1, "teksti": "HHkysely", "tyyppi": "koulukysely", "tila": "avoin", "kysymykset":
     [
-      {"id" :1, "teksti": "Mikä on hyvä?", "tyyppiid": 2, "vaihtoehdot": 
+      {"id" :1, "teksti": "Oletko kiinnostunut osallistumaan monialaiselle kurssille?", "tyyppiid": 2, "vaihtoehdot": 
         [
-          {"id":1, "teksti": "Kyllä"},
-          {"id":2, "teksti": "Ei"}
+          {"id":1, "teksti": "Erittäin paljon"},
+          {"id":2, "teksti": "Jonkin verran"},
+          {"id":3, "teksti": "En juurikaan"},
+          {"id":4, "teksti": "En yhtään"}
         ]
       },
       {"id": 2, "teksti": "Milloin koulussa on kivaa?", "tyyppiid": 1, "vaihtoehdot": 
@@ -29,4 +31,5 @@ routerApp.controller('mainController', function($scope) {
   console.log(obj.kysymykset[0].teksti);
   
   $scope.question1 = obj.kysymykset[0].teksti;
+  $scope.q1_v1 = obj.kysymykset[0].vaihtoehdot[0].teksti;
 });

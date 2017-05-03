@@ -2,13 +2,13 @@
 <div class="q-div">
   <!-- kysymys -->
   <h1 class="q-title"> {{question1}} </h1>
-
+  
   <!-- vastaus alue -->
   <div class="rb-div">
     <ul>
       <li>
         <input id="r-1" type="radio" name="r-button" ng-model="formData.type" value="erittain paljon">
-        <label for="r-1" ng-click="answerOne = 4">Hyvin paljon</label><div class="check"></div>
+        <label for="r-1" ng-click="answerOne = 4"> {{q1_v1}} </label><div class="check"></div>
       </li>
       <li>
         <input id="r-2" type="radio" name="r-button" ng-model="formData.type" value="kohtalaisesti">
