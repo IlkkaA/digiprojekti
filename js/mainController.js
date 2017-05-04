@@ -12,14 +12,14 @@ routerApp.controller('mainController', function($scope) {
           {"id":4, "teksti": "En yhtään"}
         ]
       },
-      {"id": 2, "teksti": "Milloin koulussa on kivaa?", "tyyppiid": 1, "vaihtoehdot": 
+      {"id": 2, "teksti": "Minkä koulutusohjelmien kanssa haluaisit yhteisen kurssin?", "tyyppiid": 1, "vaihtoehdot": 
         [
           {"id":3, "teksti": "Kun on mielekästä tekemistä"},
           {"id":4, "teksti": "Kun ei ole stressiä"},
           {"id": 5, "teksti": "Kun ruokalassa on hyvää ruokaa"}
         ]
       },
-      {"id": 3, "teksti": "Anna vapaata palautetta:", "tyyppiid": 3, "vaihtoehdot": null}
+      {"id": 3, "teksti": "Ajatuksia monialaisen kurssin kehittämiseksi:", "tyyppiid": 3, "vaihtoehdot": null}
     ]
   };
   myJSON = JSON.stringify(myObj);
@@ -28,8 +28,13 @@ routerApp.controller('mainController', function($scope) {
   text = localStorage.getItem("teksti");
   obj = JSON.parse(text);
   console.log(obj);
-  console.log(obj.kysymykset[0].teksti);
+  console.log(obj.kysymykset[2]);
   
   $scope.question1 = obj.kysymykset[0].teksti;
   $scope.q1_v1 = obj.kysymykset[0].vaihtoehdot[0].teksti;
+  $scope.q1_v2 = obj.kysymykset[0].vaihtoehdot[1].teksti;
+  $scope.q1_v3 = obj.kysymykset[0].vaihtoehdot[2].teksti;
+  $scope.q1_v4 = obj.kysymykset[0].vaihtoehdot[3].teksti;
+  $scope.question2 = obj.kysymykset[1].teksti;
+  $scope.question3 = obj.kysymykset[2].teksti;
 });
