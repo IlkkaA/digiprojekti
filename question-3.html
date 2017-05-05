@@ -3,7 +3,7 @@
   <h1 class="q-title"> {{question3}} </h1>
 
   <!-- vastaus alue -->
-  <textarea></textarea>
+  <textarea name="textarea" ng-model="formData.textarea"></textarea>
   
 </div>
 
@@ -11,5 +11,8 @@
 
 <div class="btn-div text-center clearfix">
   <a class="fl-left" ui-sref="questionnaire.question-2"><span>Edellinen</span></a>
-  <a class="fl-right" ui-sref="end"><span>Seuraava</span></a>      
+<!--  <a class="fl-right" ui-sref="end"><span>Lähetä</span></a>  -->
+  <button type="submit" class="submit-btn fl-right" >Lähetä</button>
+
+<!--  <pre> list={{list}} </pre>-->
 </div>

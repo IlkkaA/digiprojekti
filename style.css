@@ -267,7 +267,7 @@ NEXT PREV BUTTON STYLES
   bottom: 0px;
 }
 
-.btn-div a {
+.btn-div a, .btn-div button {
   display: inline-block;
   box-sizing: border-box;
   background-color: #fff;
@@ -279,11 +279,13 @@ NEXT PREV BUTTON STYLES
   transition: border 0.25s linear;
 }
 
-.btn-div a span {
+.btn-div a span, .btn-div button {
   font-size: 60px;
+  font-family: 'Lato';
+  font-weight: 300;
 }
 
-.btn-div a:hover {
+.btn-div a:hover, .btn-div button:hover {
   cursor: pointer;
   border: 5px solid #0DFF92;
 }

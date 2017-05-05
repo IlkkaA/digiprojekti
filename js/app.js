@@ -17,6 +17,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     url: '/questionnaire',
     templateUrl: 'questionnaire.html',
     controller: 'mainController'
+      
   })
 
   // nested list with custom controller
