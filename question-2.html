@@ -1,30 +1,30 @@
 <div class="q-div-2">
   <!-- kysymys -->
-  <h1 class="q-title-sm"> {{question2}} </h1>
+  <h1 class="q-title-sm"> {{obj.kysymykset[2].teksti}} </h1>
 
   <!-- vastaus alue -->
   <div class="cb-div">
     <ul>
       <li>
-        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v1"/><label for="cb-1">{{q2_v1}}</label>
+        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v1"/><label for="cb-1">{{obj.kysymykset[2].vaihtoehdot[0].teksti}}</label>
       </li>
       <li>
-        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v2"/><label for="cb-1">{{q2_v2}}</label>
+        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v2"/><label for="cb-1">{{obj.kysymykset[2].vaihtoehdot[1].teksti}}</label>
       </li>
       <li>
-        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v3"/><label for="cb-1">{{q2_v3}}</label>
+        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v3"/><label for="cb-1">{{obj.kysymykset[2].vaihtoehdot[2].teksti}}</label>
       </li>
       <li>
-        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v4"/><label for="cb-1">{{q2_v4}}</label>
+        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v4"/><label for="cb-1">{{obj.kysymykset[2].vaihtoehdot[3].teksti}}</label>
       </li>
       <li>
-        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v5"/><label for="cb-1">{{q2_v5}}</label>
+        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v5"/><label for="cb-1">{{obj.kysymykset[2].vaihtoehdot[4].teksti}}</label>
       </li>
       <li>
-        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v6"/><label for="cb-1">{{q2_v6}}</label>
+        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v6"/><label for="cb-1">{{obj.kysymykset[2].vaihtoehdot[5].teksti}}</label>
       </li>
       <li>
-        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v7"/><label for="cb-1">{{q2_v7}}</label>
+        <input type="checkbox" value="ko-1" id="cb-1" ng-model="formData.c1v7"/><label for="cb-1">{{obj.kysymykset[2].vaihtoehdot[6].teksti}}</label>
       </li>
     </ul>  
   </div>

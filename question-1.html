@@ -1,26 +1,26 @@
 
 <div class="q-div">
   <!-- kysymys -->
-  <h1 class="q-title"> {{question1}} </h1>
+  <h1 class="q-title"> {{obj.kysymykset[0].teksti}} </h1>
   
   <!-- vastaus alue -->
   <div class="rb-div">
     <ul>
       <li>
-        <input id="r-1" type="radio" name="r-button" ng-model="formData.type" value="erittain paljon">
-        <label for="r-1" ng-click="answerOne = 4" name="g1v1" ng-model="formData.q1v1"> {{q1_v1}} </label><div class="check"></div>
+        <input id="r-1" type="radio" name="r-button" ng-model="formData.teksti" value={{obj.kysymykset[0].vaihtoehdot[0].teksti}}>
+        <label for="r-1" name="g1v1" ng-model="formData.q1v1"> {{obj.kysymykset[0].vaihtoehdot[0].teksti}} </label><div class="check"></div>
       </li>
       <li>
-        <input id="r-2" type="radio" name="r-button" ng-model="formData.type" value="kohtalaisesti">
-        <label for="r-2" ng-click="answerOne = 3" name="g1v2" ng-model="formData.q1v2">{{q1_v2}}</label><div class="check"></div>
+        <input id="r-2" type="radio" name="r-button" ng-model="formData.teksti" value="jonkin verran">
+        <label for="r-2" name="g1v2" ng-model="formData.q1v2">{{obj.kysymykset[0].vaihtoehdot[1].teksti}}</label><div class="check"></div>
       </li>
       <li>
-        <input id="r-3" type="radio" name="r-button" ng-model="formData.type" value="en juurikaan">
-        <label for="r-3" ng-click="answerOne = 2" name="g1v3" ng-model="formData.q1v3">{{q1_v3}}</label><div class="check"></div>
+        <input id="r-3" type="radio" name="r-button" ng-model="formData.teksti" value="en juurikaan">
+        <label for="r-3" name="g1v3" ng-model="formData.q1v3">{{obj.kysymykset[0].vaihtoehdot[2].teksti}}</label><div class="check"></div>
       </li>
       <li>
-        <input  id="r-4" type="radio" name="r-button" ng-model="formData.type" value="en yhtaan">
-        <label for="r-4" ng-click="answerOne = 1"name="g1v4" ng-model="formData.q1v4">{{q1_v4}}</label><div class="check"></div>
+        <input  id="r-4" type="radio" name="r-button" ng-model="formData.teksti" value="en yhtaan">
+        <label for="r-4" name="g1v4" ng-model="formData.q1v4">{{obj.kysymykset[0].vaihtoehdot[3].teksti}}</label><div class="check"></div>
       </li>          
     </ul>      
   </div>
