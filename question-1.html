@@ -7,16 +7,9 @@
   <div class="rb-div">
     <ul ng-repeat="data in rbtn">
       <li>
-        <input id="rb1_{{data.id}}" name="r-btn" type="radio" ng-model="formData.rbtn" value={{data.teksti}}>
+        <input id="rb1_{{data.id}}" name="r-btn" type="radio" ng-model="formData.radiobutton" value={{data.id}}>
         <label for="rb1_{{data.id}}">{{data.teksti}}</label><div class="check"></div>
       </li>
-      
-<!--
-      <li>
-        <input  id="r-4" type="radio" name="r-button" ng-model="formData.teksti" value="{{obj.kysymykset[0].vaihtoehdot[4].teksti}}">
-        <label for="r-4">{{obj.kysymykset[0].vaihtoehdot[3].teksti}}</label><div class="check"></div>
-      </li>          
--->
     </ul>      
   </div>
 </div>
